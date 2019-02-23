@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    
+</head>
+  <body>
+    <h1>The Psychic</h1>
+
+    <p>Guess what letter I'm thinking of</p>
+
+    <p id="wins">Wins:</p>
+
+    <p>Losses:</p>
+
+    <p>Guesses Left:</p>
+
+    <p>Your guesses so far:</p>
+
+
+
+
+
+    
+
+   <script src="assets/javascript/game.js">
+
+   var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
+
+   var wins = 0;
+   var losses =0;
+   var guessesLeft = 9;
+   var lettersPicked = [];
+
+   document.onkeyup = function(event){
+
+    var userGuess = event.key;
+
+    var computerGuess = computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
+
+    var computerGuess = computerChoices[Math.Floor(Math.random() * computerChoices.lenght)];
+
+   </script>
+  </body>
+</html>
